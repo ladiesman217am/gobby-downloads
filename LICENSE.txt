@@ -1,0 +1,9 @@
+Copyright (c) 2026 Gobby. All rights reserved.
+
+This software is proprietary and is provided only to authorised Gobby staff and
+recipients. No permission is granted to modify, redistribute, sell, sublicense,
+reverse engineer, or make the software available to others except with the
+copyright owner's written permission.
+
+Third-party components downloaded or used by Gobby remain subject to their
+respective licence terms included in the release package.

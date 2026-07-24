@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a Gobby problem without including private transcript data.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach transcripts, recordings, dictionary files, logs, or other private information.
+  - type: input
+    id: version
+    attributes:
+      label: Gobby version
+      placeholder: 1.0.1
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: dropdown
+    id: indicator
+    attributes:
+      label: Does the listening animation appear?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the behaviour without pasting private dictated text.
+    validations:
+      required: true
