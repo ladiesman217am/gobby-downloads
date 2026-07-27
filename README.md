@@ -10,13 +10,13 @@ using.
 
 **[Download the latest Gobby for Mac](https://github.com/ladiesman217am/gobby-downloads/releases/latest/download/Gobby-Mac-latest.zip)**
 
-Version 1.3.3 · macOS 13 or newer · Apple Silicon and Intel
+Version 1.4.0 · macOS 13.3 or newer · Apple Silicon and Intel
 
 ### Windows
 
 **[Download the latest Gobby for Windows](https://github.com/ladiesman217am/gobby-downloads/releases/latest/download/Gobby-Windows-x64-latest.zip)**
 
-Version 1.0.1 · 64-bit Windows 10 22H2 or Windows 11
+Version 1.1.0 · 64-bit Windows 10 22H2 or Windows 11
 
 The [latest release page](https://github.com/ladiesman217am/gobby-downloads/releases/latest)
 contains versioned packages, release notes, and SHA-256 checksums.
@@ -24,29 +24,31 @@ contains versioned packages, release notes, and SHA-256 checksums.
 ## Install on Mac
 
 1. Download and extract `Gobby-Mac-latest.zip`.
-2. Right-click **Install Gobby.command** and choose **Open**.
+2. Right-click **Gobby Setup.app** and choose **Open**.
 3. Confirm **Open** if macOS warns that the file came from the internet.
-4. Follow the Terminal instructions.
-5. Allow Microphone and Accessibility when macOS requests them.
+4. Enter your name, choose a talk key, and click **Set up Gobby**.
+5. Leave the setup window open while the private speech model downloads.
+6. Allow Microphone and Accessibility when macOS requests them.
 
-The first installation downloads and verifies the local Whisper model and may
-install Homebrew and whisper.cpp. It requires an internet connection and
-approximately 2 GB of free disk space.
+The entire installation happens in one graphical window. It does not require
+Terminal, Homebrew, Xcode, or an administrator password. The first installation
+requires internet and approximately 2 GB of free disk space.
 
 This private staff build is not notarised through the Apple Developer Program,
 so right-clicking the installer and choosing Open is required.
 
 ### Mac controls
 
-- Hold Left Option, speak, then release to transcribe and type.
-- Double-tap Left Option for hands-free dictation; tap it once to finish.
+- Hold the talk key selected during setup, speak, then release to transcribe and type.
+- Double-tap that key for hands-free dictation; tap it once to finish.
 - Use the Gobby menu-bar icon to open the dashboard and Preferences.
 
 ## Install on Windows
 
 1. Download and extract `Gobby-Windows-x64-latest.zip`.
-2. Double-click **Install Gobby.cmd**.
-3. Follow the prompts and restart Windows when requested.
+2. Double-click **Gobby Setup.vbs** (usually displayed as **Gobby Setup**).
+3. Enter your name, choose a talk key, and click **Set up Gobby**.
+4. Leave the graphical setup window open until it says you are ready.
 
 Windows may show a SmartScreen warning because this private staff build is not
 yet code-signed. Choose **More info**, then **Run anyway**, only when the file
@@ -57,8 +59,8 @@ The first installation requires an internet connection and approximately
 
 ### Windows controls
 
-- Hold `F8` to record; release it to transcribe and type.
-- Double-tap `F8` for hands-free dictation; press it again to finish.
+- Hold the talk key selected during setup; release it to transcribe and type.
+- Double-tap that key for hands-free dictation; press it again to finish.
 - Use the Gobby icon near the Windows clock to open the dictionary or settings.
 
 ## Privacy
