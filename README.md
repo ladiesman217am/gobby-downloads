@@ -1,59 +1,89 @@
-# Gobby for Windows
+# Gobby
 
-Gobby is private, local voice dictation for Windows. Hold a hotkey, speak
-naturally, and Gobby types the cleaned transcript into the app you are using.
+Gobby is private, local voice dictation for Mac and Windows. Hold a hotkey,
+speak naturally, and Gobby types the cleaned transcript into the app you are
+using.
 
 ## Download
 
+### Mac
+
+**[Download the latest Gobby for Mac](https://github.com/ladiesman217am/gobby-downloads/releases/latest/download/Gobby-Mac-latest.zip)**
+
+Version 1.3.3 · macOS 13 or newer · Apple Silicon and Intel
+
+### Windows
+
 **[Download the latest Gobby for Windows](https://github.com/ladiesman217am/gobby-downloads/releases/latest/download/Gobby-Windows-x64-latest.zip)**
 
-You can also view the version number, release notes, and checksum on the
-[latest release page](https://github.com/ladiesman217am/gobby-downloads/releases/latest).
+Version 1.0.1 · 64-bit Windows 10 22H2 or Windows 11
 
-## Install
+The [latest release page](https://github.com/ladiesman217am/gobby-downloads/releases/latest)
+contains versioned packages, release notes, and SHA-256 checksums.
 
-1. Download the ZIP using the link above.
-2. Extract the ZIP.
-3. Double-click **Install Gobby.cmd**.
-4. Follow the prompts.
-5. Restart Windows when requested.
+## Install on Mac
+
+1. Download and extract `Gobby-Mac-latest.zip`.
+2. Right-click **Install Gobby.command** and choose **Open**.
+3. Confirm **Open** if macOS warns that the file came from the internet.
+4. Follow the Terminal instructions.
+5. Allow Microphone and Accessibility when macOS requests them.
+
+The first installation downloads and verifies the local Whisper model and may
+install Homebrew and whisper.cpp. It requires an internet connection and
+approximately 2 GB of free disk space.
+
+This private staff build is not notarised through the Apple Developer Program,
+so right-clicking the installer and choosing Open is required.
+
+### Mac controls
+
+- Hold Left Option, speak, then release to transcribe and type.
+- Double-tap Left Option for hands-free dictation; tap it once to finish.
+- Use the Gobby menu-bar icon to open the dashboard and Preferences.
+
+## Install on Windows
+
+1. Download and extract `Gobby-Windows-x64-latest.zip`.
+2. Double-click **Install Gobby.cmd**.
+3. Follow the prompts and restart Windows when requested.
 
 Windows may show a SmartScreen warning because this private staff build is not
 yet code-signed. Choose **More info**, then **Run anyway**, only when the file
 came from this official download page.
 
-Requirements: 64-bit Windows 10 22H2 or Windows 11, an internet connection for
-the first installation, and approximately 8–12 GB of free disk space.
+The first installation requires an internet connection and approximately
+8–12 GB of free disk space.
 
-## Controls
+### Windows controls
 
 - Hold `F8` to record; release it to transcribe and type.
-- Double-tap `F8` to start hands-free dictation.
-- Press `F8` again to finish hands-free dictation.
+- Double-tap `F8` for hands-free dictation; press it again to finish.
 - Use the Gobby icon near the Windows clock to open the dictionary or settings.
 
 ## Privacy
 
-- Speech recognition and transcript cleanup run locally on the Windows PC.
+- Speech recognition and transcript cleanup run locally on the user's computer.
 - Gobby does not require an OpenAI API key.
 - Recordings and transcripts are not sent to the OpenAI API.
 - Temporary recordings are deleted after transcription.
-- Each installation starts with an empty private dictionary.
-- The release contains no owner dictionary, transcript history, recordings,
-  account credentials, or API keys.
+- Every new installation starts with an empty private dictionary.
+- Release packages contain no owner dictionary, transcript history, recordings,
+  model data, account credentials, source code, or API keys.
 
 ## Updates
 
-This page always points to the newest published Gobby release. The current
-application does not update silently; install the latest ZIP when your
+The two download buttons always point to the newest published release. Gobby
+does not currently update silently; install the latest ZIP when your
 organisation announces a new version. Installing over an older version
-preserves that Windows user's dictionary and settings.
+preserves that user's dictionary and settings.
 
 ## Support
 
-Use the repository's **Issues** page to report a problem. Include the Gobby
-version and Windows version, but never paste private transcripts, recordings,
-dictionary entries, or personal information into an issue.
+Use the repository's **Issues** page to report a problem. Include the platform,
+Gobby version, and operating-system version, but never paste private
+transcripts, recordings, dictionary entries, or personal information.
 
-The Gobby source code is maintained separately in a private repository. This
-public repository contains download information and compiled release files only.
+Gobby's Mac and Windows source code is maintained in separate private
+repositories. This public repository contains download information and compiled
+release files only.

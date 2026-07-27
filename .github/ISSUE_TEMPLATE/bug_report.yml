@@ -15,11 +15,20 @@ body:
       placeholder: 1.0.1
     validations:
       required: true
-  - type: input
-    id: windows
+  - type: dropdown
+    id: platform
     attributes:
-      label: Windows version
-      placeholder: Windows 11 24H2
+      label: Platform
+      options:
+        - "Mac"
+        - "Windows"
+    validations:
+      required: true
+  - type: input
+    id: operating_system
+    attributes:
+      label: Operating-system version
+      placeholder: macOS 26.0 or Windows 11 24H2
     validations:
       required: true
   - type: dropdown
